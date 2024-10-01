@@ -1,0 +1,27 @@
+:root {
+    --primary-color: #152614;
+    --secondary-color:#8AC926;
+    --accent1-color:#4ECDC4;
+    --accent2-color:#F7FFF7;
+}
+
+h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black
+}
+
+h2{  
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p{
+    font-family: "Raleway", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    padding: 10px;
+    color:black
+}
