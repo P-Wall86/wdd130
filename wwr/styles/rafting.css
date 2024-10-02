@@ -18,16 +18,21 @@
 .hero h1 {
     position:absolute;
     top:-20px;
-    left: 470px;
+    text-align: center;
+    width: 100vw;
     color: var(--accent2-color);
     font-size: 50px;
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
+    background-color: #8ac92631;
+    padding: 3px;
+    text-shadow: 5px 5px 15px black;
 }
 
 .main {
-    width:100%
+    width:100%;
+    height:auto;
 }
 
 article {
@@ -37,11 +42,19 @@ article {
     color: var(--accent2-color);
     width: 85%;
     font-family: "Raleway", sans-serif;
-    font-weight: 400;
+    font-weight: 700;
     font-style: normal;
+    background-color: #8ac92631;
+    padding: 10px;
+    text-shadow: 5px 5px 15px black;
+
 }
 
 article img {
     float:right;
     width: 200px;
+}
+
+.socialm{
+    text-decoration: none;
 }
