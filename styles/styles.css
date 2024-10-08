@@ -67,10 +67,6 @@ main img {
     margin: 1rem;
 }
 
-main p {
-    padding: 18px;
-}
-
 p {
     padding: 1rem;  
 }
@@ -96,9 +92,9 @@ footer {
     color: var(--off-color)
 }
 
-header footer .grid {
+header, footer, .grid {
     max-width: 840px;
-    margin: 0;
+    margin: 0 auto;
 }
 
 .grid {
