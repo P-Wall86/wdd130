@@ -57,7 +57,7 @@ aside img {
 aside h2{
     position: absolute;
     top: 35px;
-    left: 115px;
+    left: 105px;
 }
 
 main img {
@@ -68,7 +68,7 @@ main img {
 }
 
 main p {
-    padding: 8px;
+    padding: 18px;
 }
 
 p {
