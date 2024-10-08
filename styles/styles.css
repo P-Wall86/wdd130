@@ -11,7 +11,7 @@ nav {
     display: flex;
     background-color: var(--main-color);
     padding: var(--padding);
-    justify-items: space-evenly;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -31,8 +31,6 @@ h1 {
 }
 
 img {
-    width: 100px;
-    height: var(--height);
     border: 1px solid var(--main-color);
     padding: 2px;
     box-shadow: 0 0 30px gray;
@@ -59,17 +57,22 @@ aside img {
 aside h2{
     position: absolute;
     top: 35px;
-    left: 103px;
+    left: 115px;
 }
 
 main img {
-    width: 150px;
-    height: var(--height);
+    width: 145px;
+    height: 150px;
     float:right;
+    margin: 1rem;
+}
+
+main p {
+    padding: 8px;
 }
 
 p {
-    padding: var(--not-padding);  
+    padding: 1rem;  
 }
 
 footer {
