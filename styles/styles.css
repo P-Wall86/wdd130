@@ -1,5 +1,5 @@
 :root {
-    --padding: 10px;
+    --padding: 1rem;
     --not-padding: 0;
     --main-color: steelblue;
     --aux-color: white;
@@ -8,14 +8,21 @@
 }
 
 nav {
+    display: flex;
     background-color: var(--main-color);
     padding: var(--padding);
+    justify-items: space-evenly;
+    align-items: center;
 }
 
 nav a {
     color: var(--aux-color);
     display: block;
-    padding: 20px;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: white;
 }
 
 h1 {
@@ -24,7 +31,7 @@ h1 {
 }
 
 img {
-    width: 150px;
+    width: 100px;
     height: var(--height);
     border: 1px solid var(--main-color);
     padding: 2px;
@@ -35,14 +42,13 @@ p {
     padding: var(--padding);  
 }
 
-main {
-    max-width: 840px;
-}
-
 aside {
     width:20rem;
     text-align: center;
-    position: relative;}
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
 
 
 aside img {
@@ -52,7 +58,7 @@ aside img {
 
 aside h2{
     position: absolute;
-    top: 20px;
+    top: 35px;
     left: 103px;
 }
 
@@ -80,9 +86,24 @@ footer {
 
 /* Class Selectors */
 .box{
-    margin: 1rem;
-    border: 5px;
-    padding: 1rem;
+    margin: 2rem;
+    border: 1px ;
+    padding: 2rem;
     background-color:rgba(142, 180, 70, 0.616);
     color: var(--off-color)
+}
+
+.grid header, footer {
+    max-width: 840px;
+    margin: 0;
+}
+
+.grid {
+    display:grid;
+    align-items: center;
+}
+
+main {
+    grid-column: 2/3;
+    margin: 1rem;
 }
