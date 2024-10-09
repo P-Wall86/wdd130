@@ -107,9 +107,8 @@ article img {
 .socialm{
     text-decoration: none;
 }
-
 .sec2 {
-    display: grid;
+    display:grid;
 }
 
 .sec2 h2 {
@@ -121,16 +120,23 @@ article img {
     justify-self: center;
 }
 
-.sec2 img{
-    width:200px;
-    height:100px;
+.adv {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
 }
 
-h3{
+.sec2 img{
+    width:250px;
+    height:150px;
+}
+
+figcaption{
     font-size: 15px;
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
+    text-align: center;
 }
 
 footer{
