@@ -58,14 +58,47 @@
         <div class="section3">
             <section>
                 <h1>Help Us Grow</h1>
+                <div class="adv2">
+                    <figure><img src="images/contact1.webp" alt="contact1"></figure>
+                        <figcaption>Text here</figcaption>
+                    <figure><img src="images/contact2.webp" alt="contact2"></figure>
+                        <figcaption>Text here</figcaption>
+                    <figure><img src="images/contact3.webp" alt="contact3"></figure>
+                        <figcaption>Text here</figcaption>
+                </div>
             </section>
         </div>
         <div class="section4">
             <section>
                 <form>
                     <fieldset>
-
+                        <div class="form-item column1">
+                            <label for="fullname">Full name</label>
+                            <input type="text" id="fullname" name="fullname">
+                        </div>
+                        <div class="form-item column1">
+                            <label for="email">Email</label>
+                            <input type="text" id="email" name="email">
+                        </div>
+                        <div class="form-item column2">
+                            <p>Select the purpose of the message:</p>
+                            <input type="radio" id="general" name="purpose" value="general">
+                            <label for="general">General Inquiry</label>
+                            <input type="radio" id="reservation" name="purpose" value="reservation">
+                            <label for="general">Reservation Question</label>
+                            <input type="radio" id="web" name="purpose" value="web">
+                            <label for="general">Website Suggestion</label>
+                        </div>
+                        <div class="form-item column2">
+                            <label for="comment">Comment</label>
+                            <textarea id="comment" name="comment">Insert text here...</textarea>
+                        </div>
+                        <div>
+                             <label for="news">Please, susbcribe me to the monthly newsletter</label><br>
+                             <input type="checkbox" id="news" name="news" value="news">
+                        </div>
                     </fieldset>
+                        <button type="submit">Submit Quiz</button>
                 </form>
             </section>
         </div>
