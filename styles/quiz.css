@@ -1,0 +1,71 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    }
+
+header h1{
+    color:#2a2e92;
+    margin: 1rem;
+    font-size: 2em;
+    text-align: center;
+}
+
+body{
+    font-family: "Playfair Display", serif;
+    font-size: 1.2em;
+    background: white;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+label, input, button, select, textarea {
+    font-family: inherit;
+    margin: 0;
+    padding: 0;
+    width: 150px;
+}
+
+fieldset {
+    display: grid;
+    grid-gap: 1rem;
+    margin: 1rem 0;
+    border: 1px; 
+    padding: 1rem;
+}
+
+form{
+    display:grid;
+    justify-content: center;
+    width: 700px;
+    margin: 2rem auto;
+    padding: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.5em;
+    background-color: rgba(128, 128, 128, 0.199);
+}
+
+label {
+    text-align: left;
+}
+
+button {
+    margin: 1rem, 0;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    font-size: 1.2em;
+    background-color: #232783de;
+    color: white;
+}
+
+button:hover {
+    background-color: rgba(112, 29, 221, 0.925);
+}
+
+footer {
+    text-align: center;
+    font-size: 1em;
+}

@@ -57,7 +57,7 @@ legend {
     font-weight: bold;
 }
 
-label,  input, button, select, textarea {
+label, input, button, select, textarea {
     font-family: inherit;
     margin: 0;
 }
