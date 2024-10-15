@@ -188,3 +188,68 @@ footer nav {
     height: 250px;
     align-self: center;
 }
+
+.contact-us {
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    grid-gap: 2rem;
+}
+
+.section1 {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 1rem;
+    gap: 20px;
+}
+
+.section1 section {
+    display: contents;
+}
+
+.section1 img {
+    width: 50px;
+    margin-right: 1rem;
+}
+
+.section1 p {
+    margin: 0;
+}
+
+.address {
+    display: flex;
+    align-items: center;
+    grid-column: 1;
+}
+
+.phone-mail {
+    display: flex;
+    flex-direction: column;
+    grid-column: 2;
+}
+
+.section2 {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px
+}
+
+.section2 section {
+    display: contents;
+}
+
+.section2 p {
+    border: 1px solid black;
+    margin: 10px;
+}
+
+.text-container {
+    grid-column: 1;
+}
+
+.section iframe {
+    width: 300px;
+    height: 300px;
+    max-height: 450px;
+    grid-column: 2;
+}
