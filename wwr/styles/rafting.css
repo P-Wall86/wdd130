@@ -269,7 +269,6 @@ footer nav {
     height: 175px;
     margin: 0;
     padding-left:50px;
-    justify-items: space-between;
 }
 
 .adv2 {
@@ -336,3 +335,4 @@ button {
 button:hover {
     background-color: rgba(112, 29, 221, 0.925);
 }
+
