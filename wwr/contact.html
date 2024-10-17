@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | Rafting Travel</title>
-    <meta name="description" content="This page is about my personal rafting company project. We organize trips and managed them with experienced guides. The idea is to provide a service good enough to individuals as well as small and big groups. ">
+    <title>Contact Us | Rafting Travel</title>
+    <meta name="description" content="This page provides the necessary contact information to reach out to the company. It also gives the visitor the possibility of cooperating with the company to improve visible aspects such as the website layout and leave suggestions, showing openness to different opinions and changes.">
     <meta name="author" content="Pamela Patricia Pared">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,23 +26,28 @@
     
     
     <main class="contact-us">
-        <section>
         <div class="section1">
             <section>
                 <div class="address">
                     <img src="images/location.webp" alt="location">
-                    <p>Address</p>
-                    <p>Company name<br>742 Evergreen Terrace<br>Springfield, Oregon<br>97477<br></p>
+                    <div class="text-container">
+                        <p>Address</p><br>
+                        <p>Company name<br>742 Evergreen Terrace<br>Springfield, Oregon<br>97477<br></p>
+                    </div>
                 </div>
 
                 <div class="phone-mail">
-                    <img src="images/phone.webp" alt="phone">
-                    <p>Phone</p>
-                    <p>01 234 567 890</p>
-                
-                    <img src="images/envelope.webp" alt="email">
-                    <p>Email</p>
-                    <p>companyname@domain.com</p>
+                    <div class="text-box">
+                        <img src="images/phone.webp" alt="phone">
+                        <p>Phone</p>
+                        <p>01 234 567 890</p>
+                    </div>
+
+                    <div class="text-box">
+                        <img src="images/envelope.webp" alt="email">
+                        <p>Email</p>
+                        <p>companyname@domain.com</p>
+                    </div>
                 </div>
             </section>
         </div>
@@ -59,14 +64,17 @@
             <section>
                 <h1>Help Us Grow</h1>
                 <div class="adv2">
-                    <figure><img src="images/contact1.webp" alt="contact1"></figure>
+                    <figure><img src="images/contact1.webp" alt="contact1">
                     <figcaption>Text here</figcaption>
+                    </figure>
+
+                    <figure><img src="images/contact2.webp" alt="contact2">
+                    <figcaption>Text here</figcaption>
+                    </figure>
                     
-                    <figure><img src="images/contact2.webp" alt="contact2"></figure>
+                    <figure><img src="images/contact3.webp" alt="contact3">
                     <figcaption>Text here</figcaption>
-                    
-                    <figure><img src="images/contact3.webp" alt="contact3"></figure>
-                    <figcaption>Text here</figcaption>
+                    </figure>
                 </div>
             </section>
         </div>
@@ -74,27 +82,34 @@
             <section>
                 <form>
                     <fieldset>
-                        <div class="form-item column1">
-                            <label for="fullname">Full name</label>
-                            <input type="text" id="fullname" name="fullname">
-                        </div>
-                        
-                        <div class="form-item column1">
-                            <label for="email">Email</label>
-                            <input type="text" id="email" name="email">
+                        <div class="form-item column1-container">
+                            <div class="form-item">
+                                <label for="fullname">Full name</label>
+                                <input type="text" id="fullname" name="fullname">
+                            </div>
+                            <div class="form-item">
+                                <label for="email">Email</label>
+                                <input type="text" id="email" name="email">
+                            </div>
                         </div>
                         
                         <div class="form-item column2">
                             <p>Select the purpose of the message:</p>
                             
-                            <input type="radio" id="general" name="purpose" value="general">
-                            <label for="general">General Inquiry</label>
-                            
-                            <input type="radio" id="reservation" name="purpose" value="reservation">
-                            <label for="general">Reservation Question</label>
-                            
-                            <input type="radio" id="web" name="purpose" value="web">
-                            <label for="general">Website Suggestion</label>
+                            <div class="radio-container">
+                                <input type="radio" id="general" name="purpose" value="general">
+                                <label for="general">General Inquiry</label>
+                            </div>
+
+                            <div class="radio-container">
+                                <input type="radio" id="reservation" name="purpose" value="reservation">
+                                <label for="reservation">Reservation Question</label>
+                            </div>
+
+                            <div class="radio-container">
+                                <input type="radio" id="web" name="purpose" value="web">
+                                <label for="web">Website Suggestion</label>
+                            </div>
                         </div>
                         
                         <div class="form-item column2">
@@ -102,7 +117,7 @@
                             <textarea id="comment" name="comment">Insert text here...</textarea>
                         </div>
                         
-                        <div>
+                        <div class="form-item checkbox-container">
                              <label for="news">Please, susbcribe me to the monthly newsletter</label><br>
                              <input type="checkbox" id="news" name="news" value="news">
                         </div>
