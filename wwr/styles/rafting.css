@@ -193,12 +193,15 @@ footer nav {
     display: grid;
     grid-template-rows: auto auto auto auto;
     grid-gap: 2rem;
+    background-color: var(--accent2-color);
 }
 
 .section1 {
+    background-color: #8ac92659;
     display:grid;
     grid-template-columns: 1fr 1fr;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
     margin: 1rem;
     padding: 20px;
     gap: 20px;
@@ -214,8 +217,15 @@ footer nav {
     align-items: center;
     grid-column: 1;
     margin: 0;
-    border: 1px solid black;
+    border: 1px dotted var(--primary-color);
+    background-color: var(--accent2-color);
     height: 200px;
+}
+
+.address p:first-of-type, .phone-mail p:first-of-type {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 18px;
+    color: var(--primary-color)
 }
 
 .section1 .address img {
@@ -228,11 +238,13 @@ footer nav {
     flex-direction: column;
     justify-content: center;
     flex: 1;
+    color: var(--primary-color);
 }
 
-.section1 .address p {
+.section1 .address p:last-child {
     margin: 0;
     text-align: center;
+    font-size: 14px;
 }
 
 .phone-mail {
@@ -240,7 +252,12 @@ footer nav {
     flex-direction: column;
     align-items: center;
     grid-column: 2;
-    border: 1px solid black;
+    border: 1px dotted var(--primary-color);
+    background-color: var(--accent2-color);
+}
+
+.text-box p:first-of-type {
+    margin-right: 10px;
 }
 
 .text-box {
@@ -275,6 +292,9 @@ footer nav {
 }
 
 .section2 p {
+    font-family:"Raleway", sans-serif;
+    font-weight: 700;
+    font-size: x-large;
     margin: 10px;
 }
 
@@ -291,11 +311,14 @@ footer nav {
 }
 
 .section3 {
-    border: 1px solid black;
+    border: 1px;
     margin: 1rem;
+    background-color: #8ac92659;
 }
 
 .section3 h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: xx-large;
     text-align: center;
 }
 
@@ -303,6 +326,7 @@ footer nav {
     width: 250px;
     height: 175px;
     margin: 0;
+    border: 3px solid var(--primary-color)
 }
 
 .adv2 {
@@ -319,8 +343,8 @@ footer nav {
 
 .section3 figcaption {
     font-size: 15px;
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
     font-style: normal;
     text-align: center;
     margin-top: 5px;
@@ -334,13 +358,16 @@ footer nav {
 }
 
 form{
-    font-family: "Montserrat", sans-serif;
+    font-family: "Raleway", sans-serif;
+    font-size: larger;
+    font-weight: 500;
+    background-color: #8ac92659;
     display:grid;
     max-width: 1200px;
     width: 100%;
     border: none;
     padding: 2rem;
-    margin: 0 auto;
+    margin: 2rem;
 }
 
 .form-item {
@@ -409,8 +436,8 @@ button {
     padding: 0.7rem;
     font-size: 1.2em;
     max-width: 250px;
-    background-color: #232783de;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
     justify-self: center;
 }
 
