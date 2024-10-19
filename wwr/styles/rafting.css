@@ -17,7 +17,8 @@ header {
 }
 
 header img {
-    border: 8px solid var(--accent2-color);
+    border: 5px solid var(--accent2-color);
+    width: 150px;
 }
 
 header nav {
@@ -150,6 +151,12 @@ footer nav {
     grid-column: 5;
     justify-content: flex-end;
     align-self: center;
+}
+
+footer a.wire {
+    grid-column: 1 / -1;
+    text-align: center;
+    text-decoration: none;
 }
 
 .sec1 {
@@ -294,8 +301,16 @@ footer nav {
 .section2 p {
     font-family:"Raleway", sans-serif;
     font-weight: 700;
-    font-size: x-large;
-    margin: 10px;
+    font-size: medium;
+    text-align: justify;
+    margin: 25px;
+    padding: 1rem;
+}
+
+.text-container p:first-child {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 20px;
+    text-align: center;
 }
 
 .text-container {
@@ -366,7 +381,7 @@ form{
     max-width: 1200px;
     width: 100%;
     border: none;
-    padding: 2rem;
+    padding: 1rem;
     margin: 2rem;
 }
 
@@ -434,6 +449,7 @@ button {
     border: none;
     border-radius: 0.5rem;
     padding: 0.7rem;
+    font-family: inherit;
     font-size: 1.2em;
     max-width: 250px;
     background-color: var(--primary-color);
@@ -442,6 +458,6 @@ button {
 }
 
 button:hover {
-    background-color: rgba(112, 29, 221, 0.925);
+    background-color: var(--secondary-color);
 }
 
