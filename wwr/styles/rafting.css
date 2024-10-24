@@ -156,11 +156,11 @@ footer .wire {
     grid-column: 1 / -1;
     text-align: center;
     text-decoration: none;
-    color:blue;
+    color:#152614;
 }
 
 footer .wire:hover {
-    color:blue;
+    color:#152614;
     text-decoration: underline;
     cursor: pointer;
 }
