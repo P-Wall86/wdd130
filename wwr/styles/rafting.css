@@ -152,10 +152,17 @@ footer nav {
     align-self: center;
 }
 
-footer a.wire {
+footer .wire {
     grid-column: 1 / -1;
     text-align: center;
     text-decoration: none;
+    color:blue;
+}
+
+footer .wire:hover {
+    color:blue;
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .sec1 {
@@ -459,4 +466,20 @@ button {
 
 button:hover {
     background-color: var(--secondary-color);
+}
+
+.hero-index {
+    position: relative;
+    width: 97vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 4px;
+}
+
+.main-index {
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
 }
