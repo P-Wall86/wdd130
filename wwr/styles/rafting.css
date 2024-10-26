@@ -468,18 +468,121 @@ button:hover {
     background-color: var(--secondary-color);
 }
 
-.hero-index {
-    position: relative;
-    width: 97vw;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 4px;
+ .test {
+    background-image: url(../images/heroindex.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+ }
+
+.index {
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
 }
 
-.main-index {
-    display:grid;
-    grid-template-columns: repeat(2, 1fr);
+.trips {
+    display: grid;
+    grid-template-rows: 0.2fr 0.2fr;
+    grid-row-gap: 0;
+}
+
+.trips section:first-of-type {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 1fr;
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+
+.trips section:first-of-type div {
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 35px;
+    border-radius: 15px;
+}
+
+.trips section:first-of-type div h2{
+    margin-top: 5px;
+}
+
+.trips section:first-of-type > * {
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+.trips section:first-of-type > *:not(h1) {
+    border: 1px solid #ccc;
+}
+
+.trips section:first-of-type h1 {
+    grid-row: 1;
+    grid-column: 1/ 4;
+    text-align: center;
+    border:none;
+    font-size: 35px;
+}
+
+.trips img, .trips p {
+    grid-row: 1;
+    width: 200px;
+    height: 150px;
+}
+
+.trips img{
+    grid-row: 2;
+}
+
+.trips p {
+    grid-row: 3;
+    margin: 50px;
+}
+
+.trips section:nth-last-of-type(1) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    padding: 50px;
+}
+
+.trips section:nth-last-of-type(1) > div:first-child {
+    grid-column: 1;
+}
+
+.trips section:nth-last-of-type(1) > div:last-child {
+    grid-column: 2;
+}
+
+.trips section:nth-of-type(2) table {
+    min-width: 800px;
+    border-collapse: collapse;
+}
+
+.trips table {
+    border: #152614 solid 1px;
+    background-color: #4ECDC4;
+}
+
+.trips section:nth-of-type(2) .box {
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 20px 50px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.trips section:nth-of-type(2) table th, td {
+    background-color: #4ECDC4;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid black;
 }
