@@ -3,6 +3,7 @@
     --secondary-color:#8AC926;
     --accent1-color:#4ECDC4;
     --accent2-color:#F7FFF7;
+    --border-radius:15px;
 }
 
 /*About us starts here*/
@@ -10,11 +11,12 @@
     max-width: 100vw;
 }
 
-header {
+header, header * {
     display:grid;
     grid-template-columns: auto 1fr;
-    padding: 10px;
-    background-color: var(--secondary-color) 
+    padding: 5px;
+    background-color: var(--accent2-color);
+    border-radius: var(--border-radius)
 }
 
 header img {
@@ -33,7 +35,7 @@ nav a {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 25px;
+    font-size: 30px;
     color: var(--primary-color);
 }
 
@@ -42,7 +44,7 @@ nav a {
     width:100%;
     height:100%;
     margin-top: 15px;
-    margin-bottom: 15px
+    margin-bottom: 15px;
 }
 
 .hero h1 {
@@ -62,6 +64,7 @@ nav a {
 .main {
     width:100%;
     height:auto;
+    border-radius:var(--border-radius)
 }
 
 article {
@@ -94,6 +97,8 @@ article img {
 .sec2 {
     grid-template-rows: auto 1fr; 
     justify-items: center; 
+    background-color: #8ac926e1;
+    border-radius: 15px;
 }
 
 .sec2 h2 {
@@ -117,8 +122,10 @@ figure {
 
 .sec2 img {
     max-width: 100%;
-    height: 175px;   
+    height: 170px;
+    border-radius: 15px;
 }
+
 
 figcaption{
     font-size: 15px;
@@ -126,13 +133,15 @@ figcaption{
     font-weight: 400;
     font-style: normal;
     text-align: center;
+    padding-top: 10px;
 }
 
-footer{
+footer, footer *{
     display:grid;
     grid-template-columns: auto  auto 2fr auto;
-    background-color: #8AC926;
-    padding: 1rem;
+    background-color: var(--accent2-color);
+    padding: 5px;
+    border-radius: 15px;
 }
 
 footer p {
@@ -144,6 +153,7 @@ footer p {
     align-self: center;
     justify-self: center;
     color: #152614;
+    padding-left: 10em;
 }
 
 footer nav {
@@ -201,6 +211,7 @@ footer .wire:hover {
     width: 400px;
     height: 250px;
     align-self: center;
+    border-radius: 15px;
 }
 /*About us ends here*/
 
@@ -221,6 +232,7 @@ footer .wire:hover {
     margin: 1rem;
     padding: 20px;
     gap: 20px;
+    border-radius: 15px;
 }
 
 .section1 section {
@@ -233,9 +245,10 @@ footer .wire:hover {
     align-items: center;
     grid-column: 1;
     margin: 0;
-    border: 1px dotted var(--primary-color);
+    border: 2px dotted var(--primary-color);
     background-color: var(--accent2-color);
     height: 200px;
+    border-radius: 15px;
 }
 
 .address p:first-of-type, 
@@ -269,8 +282,9 @@ footer .wire:hover {
     flex-direction: column;
     align-items: center;
     grid-column: 2;
-    border: 1px dotted var(--primary-color);
+    border: 2px dotted var(--primary-color);
     background-color: var(--accent2-color);
+    border-radius: 15px;
 }
 
 .text-box p:first-of-type {
@@ -301,7 +315,11 @@ footer .wire:hover {
 .section2 {
     display:grid;
     grid-template-columns: 1fr 1fr;
-    gap: 10px
+    gap: 10px;
+    background-color: #4ecdc567;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 10px
 }
 
 .section2 section {
@@ -339,6 +357,7 @@ footer .wire:hover {
     border: 1px;
     margin: 1rem;
     background-color: #8ac92659;
+    border-radius: 15px;
 }
 
 .section3 h1 {
@@ -351,7 +370,8 @@ footer .wire:hover {
     width: 250px;
     height: 175px;
     margin: 0;
-    border: 3px solid var(--primary-color)
+    border: 2px solid var(--primary-color);
+    border-radius: 15px;
 }
 
 .adv2 {
@@ -385,14 +405,16 @@ footer .wire:hover {
 form{
     font-family: "Raleway", sans-serif;
     font-size: larger;
-    font-weight: 500;
+    font-weight: 600;
     background-color: #8ac92659;
     display:grid;
     max-width: 1200px;
     width: 100%;
     border: none;
-    padding: 1rem;
-    margin: 2rem;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 15px;
+    justify-content: center;
 }
 
 .form-item {
@@ -496,19 +518,14 @@ button:hover {
     align-items: center;
     padding: 35px;
     border-radius: 15px;
+    background-color: #4ecdc54d;
 }
 
 .trips section:first-of-type div h2{
     margin-top: 5px;
-}
-
-.trips section:first-of-type > * {
-    border-left: 1px solid #ccc;
-    border-right: 1px solid #ccc;
-}
-
-.trips section:first-of-type > *:not(h1) {
-    border: 1px solid #ccc;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 600;
+    font-size: 25px;
 }
 
 .trips section:first-of-type h1 {
@@ -516,7 +533,9 @@ button:hover {
     grid-column: 1/ 4;
     text-align: center;
     border:none;
-    font-size: 35px;
+    font-size: 40px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 500;
 }
 
 .trips img, .trips p {
@@ -527,11 +546,17 @@ button:hover {
 
 .trips img{
     grid-row: 2;
+    border: 2px solid var(--primary-color);
+    border-radius: var(--border-radius);
 }
 
 .trips p {
     grid-row: 3;
     margin: 50px;
+    text-align: justify;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
 }
 
 .trips section:nth-last-of-type(1) {
@@ -559,29 +584,44 @@ button:hover {
 
 .trips table {
     border: #152614 solid 1px;
-    background-color: #4ECDC4;
+    background-color: #8ac926cb;
+    border-radius: var(--border-radius);
+}
+
+.trips section:nth-of-type(2) table th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid var(--accent2-color)
+}
+
+.trips section:nth-of-type(2) table th{
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.trips section:nth-of-type(2) table td{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 17px;
 }
 
 .trips section:nth-of-type(2) .box {
-    border: 1px solid #ccc;
-    border-radius: 15px;
-    padding: 20px 50px;
+    border: 2px solid var(--primary-color);
+    border-radius: var(--border-radius);
+    padding: 40px;
     margin: 20px;
     display: flex;
     justify-content: center;
     flex-direction: column;
-}
-
-.trips section:nth-of-type(2) table th, td {
-    background-color: #4ECDC4;
-    padding: 10px;
-    text-align: center;
-    border: 1px solid black;
+    background-color: #f7fff7;
+    font-family: 'Raleway', sans-serif;
 }
 /*Trips ends here*/
 
 /*Home starts here*/
 .test {
+    background-color: transparent;
     background-image: url(../images/heroindex.webp);
     background-size: cover;
     background-repeat: no-repeat;
@@ -605,15 +645,18 @@ button:hover {
     grid-column: 1 / span 2;
     text-align: center;
     border:none;
-    font-size: 35px;
-    margin: 10px; 
-
+    font-size: 20px;
+    margin: 30px; 
+    padding: 20px;
+    font-family: 'Bebas Neue', sans-serif;
 }
 
 .main-index >div:first-of-type {
     grid-row: 1;
     grid-column: 1 / span 2;
     text-align: center;
+    margin: 20px;
+    padding: 20px;
 }
 
 .main-index > section {
@@ -665,9 +708,11 @@ button:hover {
     grid-row:1;
     grid-column: 1 / span 2;
     text-align: center;
-    border:none;
+    margin: 20px;
     font-size: 35px;
-    margin: 10px; 
+    color: var(--primary-color);
+    background-color: #8ac926c4 !important;
+    border-radius: 15px;
 }
 
 .main-index >div:first-of-type {
@@ -681,16 +726,20 @@ button:hover {
     grid-column: 1 / span 2;
     display: grid; 
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
 }
 
 .trip {
-    border: 1px solid #ccc;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 35px; 
+    padding: 35px;
+    margin: 0; 
     border-radius: 15px;
+    background-color: var(--accent2-color);
+    text-align: justify;
+    opacity: 0.8;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
 }
 
 .trip:nth-of-type(1) {
@@ -702,23 +751,28 @@ button:hover {
 }
 
 .trip img, .trips p {
-    width: 200px;
+    width: 250px;
     height: 150px;
 }
 
 .main-index img{
     grid-row: 2;
+    border: 2px solid var(--primary-color);
+    border-radius: 15px;
 }
 
 .main-index p {
     grid-row: 3;
     margin: 30px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
 }
 
 .main-index > div:first-of-type section { 
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    gap: 80px;
 }
 
 .main-index > div:last-of-type {
@@ -732,6 +786,16 @@ button:hover {
     gap: 20px;
     padding: 60px;
 }
+
+.cta-section {
+    border: 1px solid #ccc;
+    padding: 20px 50px 20px 50px;
+    border-radius: 15px;
+    max-width: 200px;
+    margin-left: auto;
+    margin-right:auto;
+    background-color: var(--accent2-color);
+  }
 
 .card {
     width: 300px;
@@ -784,13 +848,4 @@ button:hover {
 
   .main-index > div:nth-of-type(2) > section.card {
     justify-self: center;
-  }
-
-  .cta-section {
-    border: 1px solid #ccc;
-    padding: 20px 50px 20px 50px;
-    border-radius: 5px;
-    max-width: 200px;
-    margin-left: auto;
-    margin-right:auto;
   }
